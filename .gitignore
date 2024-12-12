@@ -41,3 +41,39 @@ terraform.rc
 configurations/secrets.tfvars
 configurations/backend.tfvars
 .terraform.lock.hcl
+hz_api.ls
+*.backup
+output/**.*
+.terraform/terraform.tfstate
+# Compiled files
+# vault pki
+.vault-pki
+
+# Module directory in any sub-folder
+**/.terraform
+**/.terraform.lock.hcl
+.terraform
+# State file in any sub-folder
+**/terraform.tfstate
+**/terraform.tfstate.backup
+*.tfstate.lock.info
+
+# Terraform Variables
+*.tfvars
+
+# Ignored Terraform files
+*gitignore*.tf
+
+# SSH Keys
+*.pem
+
+*.DS_Store
+*.vagrant
+
+# Generated private key
+*.key
+
+.vscode
+.idea
+tf_labs
+tf_labs_js
